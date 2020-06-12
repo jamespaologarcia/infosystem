@@ -33,11 +33,6 @@ class User extends Authenticatable
      *
      * @var array
      */
-    public function questions()
-    {
-        return $this->hasMany(Question::class);
-    }
-    
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
